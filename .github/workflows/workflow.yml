@@ -13,7 +13,7 @@ jobs:
           python-version: '3.9'
       - name: Install dependencies
         run: |
-          pip install flake8 nose
+          pip install flake8 nose flask
       - name: Lint with flake8
         run: |
           flake8 . --count --max-line-length=127 --extend-ignore=E302,W291,W293,W292,E501 --exclude=.git,__pycache__ --statistics
